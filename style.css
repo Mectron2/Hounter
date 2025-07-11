@@ -1,0 +1,88 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+.circle {
+    position: absolute;
+    top: -400px;
+    left: -400px;
+    border-radius: 50%;
+    background-color: rgb(186, 255, 156);
+    z-index: -1;
+    height: 800px;
+    width: 800px;
+    filter: blur(200px);
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: white;
+    border: 1px solid #c3c3c3;
+    text-decoration: none;
+    font-size: 16px;
+    backdrop-filter: blur(10px);
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.hero-text-title {
+    font-size: 60px;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-align-center {
+    align-items: center;
+}
+
+.flex-space-between {
+    justify-content: space-between;
+}
+
+.section {
+    height: 100%;
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+.header {
+    padding-top: 40px;
+}
+
+.nav-left {
+    gap: 20px;
+}
+
+.nav-buttons {
+    gap: 60px;
+}
+
+.hero-image {
+    position: absolute;
+    border-bottom-left-radius: 10%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    min-height: 95%;
+}
+
+.logo {
+    width: 115px;
+    height: auto;
+}
+
+.content {
+    height: 100%;
+    margin-top: -81px;
+}
