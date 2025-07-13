@@ -79,7 +79,6 @@ body, html {
 .section {
     height: 100%;
     padding-left: 120px;
-    padding-right: 120px;
 }
 
 .header-wrapper {
@@ -99,14 +98,6 @@ body, html {
 
 .nav-buttons {
     gap: 60px;
-}
-
-.hero-image {
-    border-bottom-left-radius: 80px;
-    top: 0;
-    right: 0;
-    z-index: -1;
-    height: 100%;
 }
 
 .logo {
@@ -221,7 +212,7 @@ body, html {
     padding-left: 40px;
     box-sizing: border-box;
     margin-right: -120px;
-    width: 60%;
+    width: 65%;
     height: 100%;
     justify-content: flex-end;
 }
@@ -259,4 +250,40 @@ body, html {
 
 .achievement-text-content {
     font-size: 12px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    border-radius: 20px;
+    position: absolute;
+    visibility: hidden;
+    transition: visibility 0.1s ease;
+    top: 110%;
+    left: 0;
+    min-width: 100%;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 999;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    overflow: hidden;
+}
+
+.dropdown:hover .dropdown-content {
+    visibility: visible;
+}
+
+.dropdown-content a {
+    color: #464646;
+    display: block;
+    padding: 10px 16px;
+    text-decoration: none;
+    backdrop-filter: blur(10px);
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.1), rgb(255, 255, 255, 0.2));
+}
+
+.dropdown-content a:hover {
+    background-color: #f2f2f2;
 }
