@@ -1,0 +1,30 @@
+.bold-text {
+    font-weight: 900;
+}
+
+.thin-text {
+    font-weight: 200;
+}
+
+.medium-text {
+    font-weight: 400;
+}
+
+.lexend {
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.stroke-text {
+    color: white;
+    text-shadow:
+            1px 0 #1B1C57,
+            -1px 0 #1B1C57,
+            0 1px #1B1C57,
+            0 -1px #1B1C57;
+}
+
+.no-wrap {
+    white-space: nowrap;
+}

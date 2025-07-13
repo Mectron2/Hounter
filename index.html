@@ -8,12 +8,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <link href="flex.css" rel="stylesheet">
+    <link href="text.css" rel="stylesheet">
     <script>
         const mock = () => {alert('Nothing to see here :)')};
     </script>
 </head>
 <body>
-    <section class="section">
+    <main class="main">
         <div class="circle"></div>
         <header class="flex-align-center header-wrapper">
             <div class="flex-row flex-space-between header">
@@ -25,17 +27,14 @@
                         <nav class="flex-row flex-align-center nav-left">
                             <a class="button" href="/about">About Us</a>
                             <a class="button" href="/article">Article</a>
-
                             <div class="dropdown medium-text">
                                 <a class="button" href="/properties">Property ▾</a>
-                                <div class="dropdown-content">
-                                    <a href="/properties/buy">Buy</a>
-                                    <a href="/properties/rent">Rent</a>
-                                    <a href="/properties/sell">Sell</a>
-                                </div>
+                                <ul class="dropdown-content">
+                                    <li><a href="/properties/buy">Buy</a></li>
+                                    <li><a href="/properties/rent">Rent</a></li>
+                                    <li><a href="/properties/sell">Sell</a></li>
+                                </ul>
                             </div>
-                        </nav>
-                        <nav>
                             <a class="button sign-up-button" href="/register">Sign Up!</a>
                         </nav>
                     </div>
@@ -51,10 +50,10 @@
                 </h1>
                 <p class="lexend thin-text slogan-text">Everything you need about finding your place to live will be here, <br>
                     where it will be easier for you</p>
-                <div class="input-wrapper">
+                <form class="input-wrapper" action="/search" method="get">
                     <input type="text" class="search-input lexend thin-text" placeholder="Search for the location you want!">
                     <button class="search-button lexend medium-text" onclick="mock()">Search ></button>
-                </div>
+                </form>
                 <div class="flex-column">
                     <p class="lexend thin-text partnership-text">Our Partnership</p>
                     <div class="flex-row flex-space-between flex-align-center partner-logo-wrapper">
@@ -75,8 +74,8 @@
                             
                         </div>
                         <div class="achievement-text-container flex-column flex-justify-content">
-                            <p class="lexend medium-text achievement-text achievement-text-heading">1K+ People</p>
-                            <pre class="lexend thin-text achievement-text achievement-text-content">Successfully Getting Home</pre>
+                            <p class="lexend medium-text achievement-text achievement-text-heading no-wrap">1K+ People</p>
+                            <p class="lexend thin-text achievement-text achievement-text-content no-wrap">Successfully Getting Home</p>
                         </div>
                     </div>
                     <div class="achievement flex-row">
@@ -85,8 +84,8 @@
                             
                         </div>
                         <div class="achievement-text-container flex-column flex-justify-content">
-                            <pre class="lexend medium-text achievement-text achievement-text-heading">56 Houses</pre>
-                            <pre class="lexend thin-text achievement-text achievement-text-content">Sold Monthly</pre>
+                            <p class="lexend medium-text achievement-text achievement-text-heading no-wrap">56 Houses</p>
+                            <p class="lexend thin-text achievement-text achievement-text-content no-wrap">Sold Monthly</p>
                         </div>
                     </div>
                     <div class="achievement flex-row">
@@ -95,13 +94,13 @@
                             
                         </div>
                         <div class="achievement-text-container flex-column flex-justify-content">
-                            <pre class="lexend medium-text achievement-text achievement-text-heading">4K+</pre>
-                            <pre class="lexend thin-text achievement-text achievement-text-content">People Looking for New Homes</pre>
+                            <p class="lexend medium-text achievement-text achievement-text-heading no-wrap">4K+</p>
+                            <p class="lexend thin-text achievement-text achievement-text-content no-wrap">People Looking for New Homes</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </main>
 </body>
 </html>
