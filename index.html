@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link href="stylesheet/style.css" rel="stylesheet" >
+    <link href="stylesheet/text.css" rel="stylesheet">
+    <link href="stylesheet/flex.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
-    <link href="flex.css" rel="stylesheet">
-    <link href="text.css" rel="stylesheet">
     <script>
         const mock = () => {alert('Nothing to see here :)')};
     </script>
@@ -43,12 +43,12 @@
         </header>
         <div class="flex-row flex-align-center flex-space-between content">
             <div class="flex-column hero-text">
-                <h1 class="hero-text-title lexend bold-text">
+                <h1 class="hero-text-title lexend bold-text no-wrap">
                     Find The Place To<br>
                     Live <span class="stroke-text">Your Dreams</span><br>
                     Easily Here
                 </h1>
-                <p class="lexend thin-text slogan-text">Everything you need about finding your place to live will be here, <br>
+                <p class="lexend thin-text slogan-text no-wrap">Everything you need about finding your place to live will be here, <br>
                     where it will be easier for you</p>
                 <form class="input-wrapper" action="/search" method="get">
                     <input type="text" class="search-input lexend thin-text" placeholder="Search for the location you want!">
@@ -80,8 +80,7 @@
                     </div>
                     <div class="achievement flex-row">
                         <div class="achievement-images-container flex-row">
-                            <img class="achievement-image" src="assets/house.png" alt="avatar 1">
-                            
+                            <img class="achievement-image" src="assets/house.png" alt="house">
                         </div>
                         <div class="achievement-text-container flex-column flex-justify-content">
                             <p class="lexend medium-text achievement-text achievement-text-heading no-wrap">56 Houses</p>
