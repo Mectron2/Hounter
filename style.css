@@ -68,14 +68,25 @@ body, html {
     align-items: center;
 }
 
+.flex-justify-content {
+    justify-content: center;
+}
+
 .flex-space-between {
     justify-content: space-between;
 }
 
 .section {
     height: 100%;
-    margin-left: 120px;
-    margin-right: 120px;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+.header-wrapper {
+    position: absolute;
+    left: 120px;
+    right: 120px;
+    width: auto;
 }
 
 .header {
@@ -91,12 +102,11 @@ body, html {
 }
 
 .hero-image {
-    position: absolute;
-    border-bottom-left-radius: 30%;
+    border-bottom-left-radius: 80px;
     top: 0;
     right: 0;
     z-index: -1;
-    min-height: 100%;
+    height: 100%;
 }
 
 .logo {
@@ -106,7 +116,6 @@ body, html {
 
 .content {
     height: 100%;
-    margin-top: -81px;
 }
 
 .bold-text {
@@ -200,4 +209,54 @@ body, html {
 
 .partnership-text {
     color: #888B97;
+}
+
+.hero-image-container {
+    background-image: url("/assets/image.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-bottom-left-radius: 80px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    box-sizing: border-box;
+    margin-right: -120px;
+    width: 60%;
+    height: 100%;
+    justify-content: flex-end;
+}
+
+.achievements-container {
+    gap: 5%;
+    margin-right: -70px;
+}
+
+.achievement {
+    padding: 13px 23px;
+    border-radius: 30px;
+    color: black;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    background-color: #F0F3FD;
+}
+
+.achievement-text {
+    margin: 0 0 0 50px;
+}
+
+.achievement-image {
+    width: 56px;
+    height: 56px;
+    margin-right: -30px;
+    border-radius: 50%;
+    border: white 3px solid;
+    box-shadow: -3px 0 10px 0 rgba(0, 0, 0, 0.4);
+}
+
+.achievement-text-heading {
+    font-size: 16px;
+}
+
+.achievement-text-content {
+    font-size: 12px;
 }
