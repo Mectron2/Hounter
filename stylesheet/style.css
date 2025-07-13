@@ -109,7 +109,7 @@ ul, li {
     transform: translateY(-50%);
     height: 24px;
     width: 24px;
-    background-image: url('./assets/location.png');
+    background-image: url('../assets/location.png');
     background-size: contain;
     background-repeat: no-repeat;
     pointer-events: none;
